@@ -1,1 +1,24 @@
-//Escribir aqui los objetos
+object galvan {
+	
+	var sueldo = 15000
+	
+	
+	method cambioDeSueldo(nuevoSueldo){
+		sueldo = nuevoSueldo
+	}
+}
+	
+	
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
