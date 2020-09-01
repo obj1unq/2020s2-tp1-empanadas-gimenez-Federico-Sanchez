@@ -34,13 +34,23 @@ object baigorria{
 		return totalEmpanadasVendidas
 	}
 }
-
-
-
 	
 
 
-
+object gimenez{
+	
+	var fondo = 300000
+	
+	method fondo(){
+		return fondo
+	}
+	
+	
+	method pagarSueldo(persona){
+		
+		fondo = fondo - persona.sueldo()
+	}
+}
 	
 	
 	
