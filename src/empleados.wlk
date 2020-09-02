@@ -1,7 +1,8 @@
 object galvan {
 	
 	var sueldo = 15000
-	
+	var dinero = 0
+	var deuda = 0
 	
 	
 	method cambiarSueldo(nuevoSueldo){
@@ -14,10 +15,33 @@ object galvan {
 	}
 	
 	method cobrarSueldo(){
-		
+		dinero = dinero + sueldo 
+		if (deuda > dinero)
+			{deuda = deuda - dinero
+			 dinero = 0
+			}
+		else {dinero = dinero - deuda
+			  deuda = 0
+		}
 	}
-}
-
+	
+	method gastar(cuanto){
+		if (cuanto > dinero)
+			{deuda = deuda + cuanto - dinero
+			 dinero = 0
+			}
+		else
+			{dinero = dinero - cuanto}
+	}
+	
+	method dinero(){
+		return dinero
+	}
+	
+	method deuda(){
+		return deuda
+	}
+}	
 
 
 
